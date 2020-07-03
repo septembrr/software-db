@@ -43,8 +43,6 @@ https://developers.google.com/identity/sign-in/web/backend-auth
 
 The Google API client library for PHP has been loaded into the project.
 
-This uses an API key which is currently connected to a personal account bakerjemily@gmail.com. Due to the low level of traffic expected on this site, it should remain in the free tier. If future edits to this are needed, this should be migrated to another account (probably a Design Hub account).
-
 When API changes need to be made, this can be done in the central location inside init-actions.php.
 
 ### UI Libraries
