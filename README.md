@@ -1,10 +1,10 @@
 # Software Database
  
 ## Summary
-The software database was built to hold all details of software purchased for the Design Hub. It includes a front end parameterized search that allows the user to filter results by certain parameters. In addition, it includes an administrative system where the user can make changes to records, add users and records, and/or update categories as needed.
+The software database was built to hold all details of software purchases. It includes a front end parameterized search that allows the user to filter results by certain parameters. In addition, it includes an administrative system where the user can make changes to records, add users and records, and/or update categories as needed.
 
 ## File Structure
-The files are stored in the Design Hub Power Server, inside public_html. The internal file structure and general purpose of each file is as follows:
+The internal file structure and general purpose of each file is as follows:
 
 - /software_db
 	- /components
@@ -34,7 +34,7 @@ The table structure, fields and keys are listed in the diagram below. Primary ke
 
 <img src="images/db_erd.png" alt="database entity-relationship diagram" />
 
-The database itself is stored on the Power server through the design hub. If it is moved, the login information will need to be updated inside *connection.php*.
+If the database is moved, the login information will need to be updated inside *connection.php*.
 
 ## Components
 ### Google Authentication
