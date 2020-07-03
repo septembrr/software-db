@@ -1,0 +1,493 @@
+/* Font & Color Styles ----------------------------------*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  font-weight: 300;
+}
+
+.site-inner {
+  flex: 1 1 auto;
+}
+
+.site-inner,
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 300;
+  margin-bottom: 0px;
+  font-size: 26px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 26px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 21px;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+a {
+	color: #003058;
+}
+
+a:hover {
+	color: #000;
+}
+
+::focus {
+	outline: 1;
+}
+
+/* Header Styles -----------------------------------*/
+
+header {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background: #e2e2e2;
+  display: flex;
+  align-items: center;
+  min-height: 157px;
+  width: 100%;
+}
+
+.header-logo {
+  flex: 0 0 45%;
+}
+
+.header-logo img {
+  max-width: 450px;
+}
+
+.header-content {
+  flex: 1 1 55%;
+  text-align: right;
+}
+
+/* Page Content Styles ---------------------------*/
+
+.resource-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.resource-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.resource-boxes .resource-item {
+  flex: 1 1 50%;
+  padding: 30px;
+  text-align: center;
+}
+
+.resource-item h3 {
+  padding-top: 20px;
+}
+
+.resource-item img {
+  max-width: 200px;
+}
+
+.transparent-button-black {
+  background: transparent;
+  border: 2px solid #003058;
+  color: #000;
+  padding: 4px 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-style: normal;
+  border-radius: 5px;
+}
+
+.transparent-button-black:hover {
+  background: #003058;
+  color: #fff;
+  text-decoration: none;
+}
+
+.byline {
+  padding-top: 70px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#footer {
+  text-align: center;
+}
+
+.footer-inner {
+  text-align: center;
+}
+
+/* Filter & Edit Form Styles ---------------------------------------------*/
+
+.resource-form {
+  flex: 0 0 265px;
+  margin-right: 25px;
+}
+
+:not(.single-button-form) > form {
+  background: #e2e2e2;
+  color: #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  border-top: 5px solid #ba0c2f;
+  border-bottom: 5px solid #ba0c2f;
+}
+
+.single-button-form form {
+  padding: 0px;
+  margin-bottom: 0px;
+  background: transparent;
+  text-align: center;
+}
+
+.single-button-form form input[type='submit'] {
+  align-self: center;
+}
+
+.single-button-form form input[type='submit']:hover {
+  color: #000;
+}
+
+form h4 {
+  margin-top: 30px;
+}
+
+form > div {
+  margin: 5px 10px 5px 0px;
+}
+
+.field-choice {
+  display: flex;
+}
+
+.edit-form .row > .field-choice {
+  flex-direction: column;
+}
+
+form legend {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+
+.resource-form form legend::after {
+  content: '\f107';
+  color: #000;
+  font-family: 'Font Awesome 5 Pro';
+  position: absolute;
+  right: 0px;
+  font-weight: 900;
+}
+
+form legend.filter-open::after {
+  content: '\f106';
+}
+
+form label {
+  font-size: 15px;
+}
+
+form input[type=checkbox],
+form input[type=radio]  {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #000;
+  position: relative;
+  margin-right: 5px;
+}
+
+form input[type=radio] {
+  border-radius: 50%;
+}
+
+form input[type=radio]:checked {
+  background: #000;
+}
+
+form input[type=checkbox]:checked:after {
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Pro';
+  color: #ba0c2f;
+  font-size: 15px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  line-height: 15px;
+  font-weight: 900;
+}
+
+.multicol {
+  column-count: 2;
+}
+
+.tag-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tag-boxes .resource-field {
+  flex: 0 0 25%;
+  padding: 20px 20px 20px 0px;
+}
+
+.edit-form form input[type='submit'] {
+  margin-top: 20px;
+}
+
+form input[type='submit'] {
+  align-self: flex-start;
+  background: #003058;
+  border: 2px solid #003058;
+  color: #fff;
+  padding: 4px 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+form input[name=Reset] {
+  background: transparent;
+  border: 2px solid #003058;
+  color: #003058;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition-duration: 0.3s;
+}
+
+form input[type='submit']:hover {
+  background: transparent;
+  color: #003058;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form input[name=Reset]:hover {
+  background: #003058;
+  color: #fff;
+  transition-duration: 0.3s;
+}
+
+.edit-link a {
+  color: #333;
+  font-size: 14px;
+  font-style: italic;
+}
+
+form input[type='submit'].transparent-button {
+  display: inline-block;
+  border: 2px solid #333;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1px 30px;
+  margin-top: 0px;
+  background: transparent;
+}
+
+form input[type='submit'].transparent-button:hover {
+  text-decoration: none;
+  background: #333;
+  color: #fff;
+}
+
+.hidden {
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+/* Table Styles -----------------------------------------*/
+
+table {
+  width: 100%;
+}
+
+.drop-table:hover .table-item {
+  color: #003058;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.drop-table.collapsed:before .table-item {
+  color: #003058;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.table-row {
+  border-top: 1px solid #003058;
+}
+
+.table-item {
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.drop-table-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.more_info {
+  font-size: 15px;
+  margin-left: 2em;
+  margin-bottom: 8px;
+}
+
+.more_info a {
+  font-size: 15px;
+  color: #003058;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.table-wrap {
+  flex: 1 1 auto;
+}
+
+.table-wrap .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.no-results {
+	text-align: center;
+	font-size: 14px;
+}
+
+table.records-table tbody th {
+  word-break: break-all;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.records-table tbody tr:nth-child(odd) {
+  background: #f7f7f7;
+}
+
+.records-table thead tr {
+  background-color: #003058;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+.records-table th {
+  padding: 3px;
+}
+
+/* Alert Styles ---------------------------------------------*/
+
+.update-alert {
+  background: #c0d0c4;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+.update-alert.alert-error {
+  background: #dc9ca2;
+}
+
+/* Responsive Styles -------------------------------------*/
+
+@media only screen and (max-width: 992px) {
+
+  .resource-content {
+    flex-direction: column;
+  }
+
+  .resource-form {
+    margin-right: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  header {
+    padding: 15px 20px;
+    min-height: 0px;
+    flex-wrap: wrap;
+  }
+
+  .header-logo,
+  .header-content {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .header-logo img {
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .drop-table-header {
+    display: none;
+  }
+
+  .table-row {
+    padding: 10px 0px;
+  }
+
+  .table-item {
+    padding: 0px;
+  }
+
+  .more_info {
+    margin-left: 0px;
+  }
+
+  .more-link {
+    font-weight: 700;
+  }
+
+  .tag-boxes .resource-field {
+    flex: 0 0 50%;
+  }
+
+}
