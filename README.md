@@ -6,35 +6,35 @@ The software database was built to hold all details of software purchases. It in
 ## File Structure
 The internal file structure and general purpose of each file is as follows:
 
-- /software_db
-	- /components
-		- close-actions.php			// close connection to DB
-		- connection.php			    // open connection to DB
-		- footer.php				    // footer content
-		- header.php				    // header content
-		- init-actions.php			// vars & others at start of every page
-	- /css
-		- styles.css				    // site styles
-	- /google-sign-in-2.2.3				// google sign in library
-	- /images					// imagery used on front end
-	- /js						// front end JS
-		- edit-actions.php			// used to create/remove cost features
-	- auth.php					// user authentication request page
-	- edit-categories.php				// edit categories page
-	- edit-tags.php					// edit tags page
-	- edit.php					// edit individual record page
-	- login.php					// login user page
-	- logout.php					// logout user page
-	- search.php					// main page to view & search records
-	- view-users.php				// view all users, and add more
-	- view.php					// view list of records from admin side
+- `/software_db`
+	- `/components`
+		- `close-actions.php`			// close connection to DB
+		- `connection.php`			    // open connection to DB
+		- `footer.php`				    // footer content
+		- `header.php`				    // header content
+		- `init-actions.php`			// vars & others at start of every page
+	- `/css`
+		- `styles.css`				    // site styles
+	- `/google-sign-in-2.2.3`				// google sign in library (not included in this repo)
+	- `/images`					// imagery used on front end
+	- `/js`						// front end JS
+		- `edit-actions.php`			// used to create/remove cost features
+	- `auth.php`					// user authentication request page
+	- `edit-categories.php`				// edit categories page
+	- `edit-tags.php`					// edit tags page
+	- `edit.php`					// edit individual record page
+	- `login.php`					// login user page
+	- `logout.php`					// logout user page
+	- `search.php`					// main page to view & search records
+	- `view-users.php`				// view all users, and add more
+	- `view.php`					// view list of records from admin side
 
 ## Database Structure
 The table structure, fields and keys are listed in the diagram below. Primary keys are marked with an asterisk (*).
 
 <img src="images/db_erd.png" alt="database entity-relationship diagram" />
 
-If the database is moved, the login information will need to be updated inside *connection.php*.
+If the database is moved, the login information will need to be updated inside `connection.php`.
 
 ## Components
 ### Google Authentication
@@ -43,7 +43,7 @@ https://developers.google.com/identity/sign-in/web/backend-auth
 
 The Google API client library for PHP has been loaded into the project.
 
-When API changes need to be made, this can be done in the central location inside init-actions.php.
+When API changes need to be made, this can be done in the central location inside `init-actions.php`.
 
 ### UI Libraries
 This project also uses the following libraries for the UI:
